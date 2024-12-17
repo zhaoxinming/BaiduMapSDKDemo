@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/dkgray"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/snow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_selector"
+                android:onClick="setParticleType"
+                android:text="雪花"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ui_size" />
+
+        <Button
+                android:id="@+id/rain_storm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_selector"
+                android:onClick="setParticleType"
+                android:text="暴雨"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ui_size" />
+
+        <Button
+                android:id="@+id/smog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_selector"
+                android:onClick="setParticleType"
+                android:text="沙尘"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ui_size" />
+
+        <Button
+                android:id="@+id/fireworks"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_selector"
+                android:onClick="setParticleType"
+                android:text="烟花"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ui_size" />
+
+        <Button
+                android:id="@+id/flower"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_selector"
+                android:onClick="setParticleType"
+                android:text="花瓣"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ui_size" />
+
+        <Button
+                android:id="@+id/unknow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/btn_selector"
+                android:onClick="setParticleType"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ui_size" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+
+</LinearLayout>
